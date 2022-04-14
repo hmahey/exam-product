@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Honey Mahey</title>
+</head>
+<body>
+    <div class="header">
+        <a href="honest.html" class="logo"><img src="logo.png" height="22px" alt="">  PRODCLAY</a>
+        <div class="header-right">
+          <a href="honest.html">Honest</a>
+          <a href="product.html" class="active">Product</a>
+          <a href="reflection.html">Reflection</a>
+        </div>
+      </div>
+
+        <div class="sidenav" id="sidebar">
+           <div id="c" style="display: none;">
+            <h2>Errors</h2> <hr> <br>
+            <ul id="content">
+              
+            </ul>
+           </div>
+        </div>
+
+        <div class="main">
+          <div id="product">
+            <div class="container">
+             <center> <h2>Product Info</h2></center> <hr> <br>
+              <form action="https://httpbin.org/post" action="post" id="signup" name="signup">
+    
+                <div class="row">
+                  <div class="col-10">
+                    <label for="prodID">Product ID</label>
+                  </div>
+                  <div class="col-90">
+                    <input type="number" oninput="this.value=(parseInt(this.value)||0)" id="productID" required placeholder="Product ID">
+                  </div>
+                </div>
+    
+                <div class="row">
+                  <div class="col-10">
+                    <label for="prodID">Price</label>
+                  </div>
+                  <div class="col-90">
+                    <input type="number" id="price" oninput="this.value=(parseInt(this.value)||0)" required placeholder="Price">
+                  </div>
+                </div>
+    
+                <div class="row">
+                  <div class="col-10">
+                    <label for="prodID">Supplier Username</label>
+                  </div>
+                  <div class="col-90">
+                    <input type="text" id="username" required placeholder="Supplier Username" >
+                    <span id="errorUsername" style="color: red;"></span>
+                  </div>
+                </div>
+    
+                <div class="row">
+                  <div class="col-10">
+                    <label for="status">Supply Status</label>
+                  </div>
+                  <div class="col-90">
+                     <input type="checkbox" name="supplier_status" value="New Supplier"> New Supplier
+                     <input type="checkbox" name="supplier_status" value="Contract Signed"> Contract Signed
+                    <input type="checkbox" name="supplier_status" value="Quality Tester"> Quality Tester 
+                  </div>
+                </div>
+    
+                <div class="row">
+                  <div class="col-10">
+                    <label for="status">Supply Email</label>
+                  </div>
+                  <div class="col-90">
+                    <input type="email" required id="email" name="email" placeholder="Email...">
+                  </div>
+                </div>
+    
+                <div class="row">
+                  <div class="col-10">
+                    <label for="subject">Description</label>
+                  </div>
+                  <div class="col-90">
+                    <textarea id="description" style="text-transform: capitalize;" required name="description" placeholder="Write something.."></textarea>
+                  </div>
+                </div>
+    
+                <input type="hidden" name="lastName" id="lastName" value="mahey" />
+                <input type="hidden" name="studentId" id="studentId" value="103107215" />
+    
+    
+                <div class="row">
+                  <input type="submit" value="Submit">
+                  <input type="reset" value="Reset">
+    
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+
+     
+      <footer>
+        <p>Copyright © 2022 <br>
+        <a href="https://github.com/hmahey/exam-product">Github</a></p>
+      </footer>
+
+      <script src="product.js"></script>
+
+</body>
+</html>
